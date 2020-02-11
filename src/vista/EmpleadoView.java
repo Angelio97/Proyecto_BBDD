@@ -9,7 +9,7 @@ import modelo.Empleado;
 
 public class EmpleadoView {
 	// subMenuEmpleados(Tienda):
-	// Submenú exclusivo para la gestión de Empleados
+	// Submenú exclusivo para la gestion de Empleados
 	// Input: t (Tienda): Objeto de tipo Tienda.
 	// Output: -
 	public void subMenuEmpleados(Tienda t) throws ParseException {
@@ -31,11 +31,11 @@ public class EmpleadoView {
 		} while (bOpcionSubMenu != 6);
 	}
 	// gestionarOpcionEmpleado(byte, Tienda):
-	// Método controlador que en función de la opción que haya introducido el
-	// usuario en el submenu de empleados realizará una operación u otra.
+	// Método controlador que en funcion de la opcion que haya introducido el
+	// usuario en el submenu de empleados realizará una operacion u otra.
 	// Input:
-	// - byte bOpcion: Opción introducida por el usuario en el submenú.
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - byte bOpcion: Opcion introducida por el usuario en el submenú.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean bOperacionExito: Booleano que indica si se ha realizado la
 	// operacion con exito o no.
@@ -81,7 +81,7 @@ public class EmpleadoView {
 	// los datos de un Empleado y llama al BACKEND para poder aniadir el Empleado al
 	// objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha aniadido el Empleado o no.
 	private boolean aniadirEmpleado(Tienda t) throws ParseException {
@@ -114,7 +114,7 @@ public class EmpleadoView {
 	// 4) Modificamos los datos del objeto.
 	// 5) Le pasamos el objeto Empleado modificado al BACKEND.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha modificado el artículo o no.
 	private boolean modificarEmpleado(Tienda t) throws ParseException {
@@ -140,7 +140,7 @@ public class EmpleadoView {
 	// Pide al usuario que introduzca el DNI del Empleado que desea eliminar y
 	// llama al BACKEND para poder eliminar el Empleado del objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha eliminado el Empleado o no.
 	private boolean eliminarEmpleado(Tienda t) {
@@ -154,7 +154,7 @@ public class EmpleadoView {
 	// Pide al usuario que introduzca el DNI de un Empleado que queremos buscar y
 	// llama al BACKEND para poder buscar el Empleado al objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve el objeto Empleado que ha sido buscado por el BACKEND.
 	private Empleado buscarEmpleado(Tienda t) {
@@ -167,7 +167,7 @@ public class EmpleadoView {
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND.
 	// Mostrar todos los Empleados registrados en la tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: String con todos los Empleados.
 	private String mostrarEmpleados(Tienda t) {
