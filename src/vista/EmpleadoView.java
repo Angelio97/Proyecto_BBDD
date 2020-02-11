@@ -9,7 +9,7 @@ import modelo.Empleado;
 
 public class EmpleadoView {
 	// subMenuEmpleados(Tienda):
-	// Submen√∫ exclusivo para la gestion de Empleados
+	// Submenu exclusivo para la gestion de Empleados
 	// Input: t (Tienda): Objeto de tipo Tienda.
 	// Output: -
 	public void subMenuEmpleados(Tienda t) throws ParseException {
@@ -31,10 +31,10 @@ public class EmpleadoView {
 		} while (bOpcionSubMenu != 6);
 	}
 	// gestionarOpcionEmpleado(byte, Tienda):
-	// M√©todo controlador que en funcion de la opcion que haya introducido el
-	// usuario en el submenu de empleados realizar√° una operacion u otra.
+	// Metodo controlador que en funcion de la opcion que haya introducido el
+	// usuario en el submenu de empleados realizara° una operacion u otra.
 	// Input:
-	// - byte bOpcion: Opcion introducida por el usuario en el submen√∫.
+	// - byte bOpcion: Opcion introducida por el usuario en el submenu.
 	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean bOperacionExito: Booleano que indica si se ha realizado la
@@ -108,15 +108,15 @@ public class EmpleadoView {
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND.
 	// 1) Pide al usuario que introduzca el DNI de un Empleado que desee
 	// modificar.
-	// 2) Busca en el BACKEND si el Empleado est√° registrado en la tienda.
-	// 3) Si est√° registrado en la tienda, el FRONTEND pide al usuario que cambie
+	// 2) Busca en el BACKEND si el Empleado esta° registrado en la tienda.
+	// 3) Si esta° registrado en la tienda, el FRONTEND pide al usuario que cambie
 	// los datos del Empleado.
 	// 4) Modificamos los datos del objeto.
 	// 5) Le pasamos el objeto Empleado modificado al BACKEND.
 	// Input:
 	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
-	// - boolean: Devuelve un booleano si el BACKEND ha modificado el art√≠culo o no.
+	// - boolean: Devuelve un booleano si el BACKEND ha modificado el arta≠culo o no.
 	private boolean modificarEmpleado(Tienda t) throws ParseException {
 		String sDni;
 		boolean bExito = false;
