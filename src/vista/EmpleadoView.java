@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import controlador.Tienda;
-import modelo.Socio;
+import modelo.Empleado;
 
 public class EmpleadoView {
 	// subMenuEmpleados(Tienda):
@@ -17,7 +17,7 @@ public class EmpleadoView {
 		boolean bOperacionExito;
 
 		do {
-			bOpcionSubMenu = EJEMPLO_ARTICULOS.subMenu(Socio.class.getSimpleName());
+			bOpcionSubMenu = EJEMPLO_ARTICULOS.subMenu(Empleado.class.getSimpleName());
 			bOperacionExito = gestionarOpcionEmpleado(bOpcionSubMenu, t);
 
 			if (bOpcionSubMenu > 0 && bOpcionSubMenu < 4) {
@@ -42,8 +42,8 @@ public class EmpleadoView {
 	public boolean gestionarOpcionEmpleado(byte bOpcion, Tienda t) throws ParseException {
 		boolean bOperacionExito = false;
 		switch (bOpcion) {
-		case 1: // Añadir empleado
-			bOperacionExito = añadirEmpleado(t);
+		case 1: // Aniadir empleado
+			bOperacionExito = aniadirEmpleado(t);
 			break;
 		case 2: // Modificar empleado
 			bOperacionExito = modificarEmpleado(t);
@@ -52,7 +52,7 @@ public class EmpleadoView {
 			bOperacionExito = eliminarEmpleado(t);
 			break;
 		case 4: // Buscar empleado
-			Socio oEmp = buscarEmpleado(t);
+			Empleado oEmp = buscarEmpleado(t);
 			if (oEmp != null) {
 				System.out.println(oEmp);
 			} else {
@@ -76,15 +76,15 @@ public class EmpleadoView {
 	// # Empleado METHODS #
 	// ###############################
 
-	// añadirEmpleado(Tienda t):
+	// aniadirEmpleado(Tienda t):
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND. Pide al usuario que introduzca
-	// los datos de un Empleado y llama al BACKEND para poder añadir el Empleado al
+	// los datos de un Empleado y llama al BACKEND para poder aniadir el Empleado al
 	// objeto Tienda.
 	// Input:
 	// - Tienda t: Objeto tienda de la aplicación.
 	// Output:
-	// - boolean: Devuelve un booleano si el BACKEND ha añadido el Empleado o no.
-	private boolean añadirEmpleado(Tienda t) throws ParseException {
+	// - boolean: Devuelve un booleano si el BACKEND ha aniadido el Empleado o no.
+	private boolean aniadirEmpleado(Tienda t) throws ParseException {
 		String sDni, sNombre, sApellidos, sDomicilio, sEmail, sSeguridadSocial, sDateString;
 		Date dFechaNacimiento;
 
@@ -97,7 +97,7 @@ public class EmpleadoView {
 		sDateString = ValidaLibrary.leer("Introduce una fecha de nacimiento (31/12/1998): ");
 		dFechaNacimiento = new SimpleDateFormat("dd/MM/yyyy").parse(sDateString);
 
-		Socio oEmp = new Socio(sDni, sNombre, sApellidos, sSeguridadSocial);
+		Empleado oEmp = new Empleado(sDni, sNombre, sApellidos, sSeguridadSocial);
 		oEmp.setsDomicilio(sDomicilio);
 		oEmp.setsEmail(sEmail);
 		oEmp.setdFechaNacimiento(dFechaNacimiento);
@@ -121,7 +121,7 @@ public class EmpleadoView {
 		String sDni;
 		boolean bExito = false;
 		sDni = ValidaLibrary.leer("Introduce un DNI de un Empleado que desees modificar: ");
-		Socio oEmp = t.searchEmpleado(new Socio(sDni));
+		Empleado oEmp = t.searchEmpleado(new Empleado(sDni));
 		if (oEmp != null) {
 			oEmp.setsNombre(ValidaLibrary.leer("Introduce un nombre: "));
 			oEmp.setsApellidos(ValidaLibrary.leer("Introduce los apellidos: "));
@@ -146,7 +146,7 @@ public class EmpleadoView {
 	private boolean eliminarEmpleado(Tienda t) {
 		String sDni;
 		sDni = ValidaLibrary.leer("Introduce un DNI de un Empleado que desees eliminar: ");
-		return t.deleteEmpleado(new Socio(sDni));
+		return t.deleteEmpleado(new Empleado(sDni));
 	}
 
 	// buscarEmpleado(Tienda t):
@@ -157,10 +157,10 @@ public class EmpleadoView {
 	// - Tienda t: Objeto tienda de la aplicación.
 	// Output:
 	// - boolean: Devuelve el objeto Empleado que ha sido buscado por el BACKEND.
-	private Socio buscarEmpleado(Tienda t) {
+	private Empleado buscarEmpleado(Tienda t) {
 		String sDni;
 		sDni = ValidaLibrary.leer("Introduce un DNI de un Empleado que desees buscar: ");
-		return t.searchEmpleado(new Socio(sDni));
+		return t.searchEmpleado(new Empleado(sDni));
 	}
 
 	// mostrarEmpleados(Tienda t):
