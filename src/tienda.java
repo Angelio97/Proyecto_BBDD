@@ -1,4 +1,7 @@
 
 public class tienda {
-	 syso
+	 private void psvm() {
+		System.out.println("Hola");
+
+	}
 }
