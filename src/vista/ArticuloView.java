@@ -23,7 +23,6 @@ public class ArticuloView {
 					System.out.println("ERROR: No se ha realizado la operacion.");
 				}
 			}
-
 		} while (bOpcionSubMenu != 6);
 	}
 
@@ -40,7 +39,7 @@ public class ArticuloView {
 		boolean bOperacionExito = false;
 		switch (bOpcion) {
 		case 1: // Añadir articulo
-			bOperacionExito = añadirArticulo(t);
+			bOperacionExito = aniadirArticulo(t);
 			break;
 		case 2: // Modificar articulo
 			bOperacionExito = modificarArticulo(t);
@@ -73,7 +72,7 @@ public class ArticuloView {
 	// # Articulo METHODS #
 	// ###############################
 
-	// añadirArticulo(Tienda t):
+	// aniadirArticulo(Tienda t):
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND. Pide al usuario que introduzca
 	// los datos de un articulo y llama al BACKEND para poder añadir el articulo al
 	// objeto Tienda.
@@ -81,7 +80,7 @@ public class ArticuloView {
 	// - Tienda t: Objeto tienda de la aplicación.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha añadido el artículo o no.
-	private boolean añadirArticulo(Tienda t) {
+	private boolean aniadirArticulo(Tienda t) {
 		short shIdentificador;
 		String sNombre;
 		float fPrecio;

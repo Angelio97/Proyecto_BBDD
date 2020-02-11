@@ -44,7 +44,7 @@ public class ClienteView {
 		boolean bOperacionExito = false;
 		switch (bOpcion) {
 		case 1: // Añadir cliente
-			bOperacionExito = añadirCliente(t);
+			bOperacionExito = aniadirCliente(t);
 			break;
 		case 2: // Modificar cliente
 			bOperacionExito = modificarCliente(t);
@@ -77,7 +77,7 @@ public class ClienteView {
 	// # Cliente METHODS #
 	// ###############################
 
-	// añadirCliente(Tienda t):
+	// aniadirCliente(Tienda t):
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND. Pide al usuario que introduzca
 	// los datos de un cliente y llama al BACKEND para poder añadir el cliente al
 	// objeto Tienda.
@@ -85,7 +85,7 @@ public class ClienteView {
 	// - Tienda t: Objeto tienda de la aplicación.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha añadido el cliente o no.
-	private boolean añadirCliente(Tienda t) throws ParseException {
+	private boolean aniadirCliente(Tienda t) throws ParseException {
 		String sDni, sNombre, sApellidos, sDomicilio, sEmail, sTarjetaCredito, sDateString;
 		Date dFechaNacimiento;
 

@@ -30,7 +30,6 @@ public class EmpleadoView {
 
 		} while (bOpcionSubMenu != 6);
 	}
-
 	// gestionarOpcionEmpleado(byte, Tienda):
 	// Método controlador que en función de la opción que haya introducido el
 	// usuario en el submenu de empleados realizará una operación u otra.

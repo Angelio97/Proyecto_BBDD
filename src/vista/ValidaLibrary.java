@@ -167,7 +167,7 @@ public class ValidaLibrary {
 
 	/*
 	 * ############################### # VALIDACION DE NUMEROS SHORT #
-	 * ###############################
+	 * ##############################
 	 */
 
 	public static short validaNumero(String sMensaje, short fMin, short fMax) {

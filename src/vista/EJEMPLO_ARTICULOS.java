@@ -61,7 +61,6 @@ public class EJEMPLO_ARTICULOS {
 		bOpcion = (byte) ValidaLibrary.valida("Introduce una opcion valida: ", 1, 4, 3);
 		return bOpcion;
 	}
-
 	// subMenu(String):
 	// Funcion que imprime el menu por pantalla y le da la posibilidad al usuario de
 	// introducir una opcion entre 1 y 6.
