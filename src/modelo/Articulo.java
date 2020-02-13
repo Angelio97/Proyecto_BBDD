@@ -56,7 +56,7 @@ public class Articulo {
 	// 4) toString
 	public String toString() {
 		String sResultado = "";
-		sResultado += "ID: " + this.shIdentificador + " - ";
+		sResultado += "ID del Articulo: " + this.shIdentificador + " - ";
 		sResultado += "Nombre: " + this.sNombre + " - ";
 		sResultado += "Precio (Sin IVA): " + this.fPrecio + " euros. - ";
 		sResultado += "Precio (Con IVA): " + this.precioConIva() + " euros.\n";
@@ -64,6 +64,11 @@ public class Articulo {
 	}
 	
 	// 5) Funciones / metodos especificos
+
+	/**
+	 * Este metodo devuelve el precio del articulo con el IVA
+	 * @return Precio con IVA
+	 */
 	public float precioConIva() {
 		return this.fPrecio * IVA;
 	}
