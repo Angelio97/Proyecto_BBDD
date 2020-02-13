@@ -72,7 +72,7 @@ public class Articulo {
 	 * @return Precio con IVA
 	 */
 	public float precioConIva() {
-		return this.fPrecio * IVA;
+		return fPrecio * IVA;
 	}
 
 	@Override
