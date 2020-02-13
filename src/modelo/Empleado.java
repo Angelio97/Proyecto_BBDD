@@ -17,6 +17,10 @@ public class Empleado extends Persona {
 		return sNumSeguridadSocial;
 	}
 
+	/**
+	 * Este metodo se usa para establecer el numero de seguridad social del empleado
+	 * @param sNumSeguridadSocial Numero de seguridad social
+	 */
 	public void setsNumSeguridadSocial(String sNumSeguridadSocial) {
 		this.sNumSeguridadSocial = sNumSeguridadSocial;
 	}
@@ -24,7 +28,7 @@ public class Empleado extends Persona {
 	public String toString() {
 		String sResultado = "";
 		sResultado += super.toString() + "\n";
-		sResultado += "Seguridad social: " + this.sNumSeguridadSocial + "\n";
+		sResultado += "Numero de Seguridad social: " + this.sNumSeguridadSocial + "\n";
 		return sResultado;
 	}
 

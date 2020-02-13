@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.Date;
 
-public abstract class Persona {
+public abstract class Persona implements IPersona {
 	protected String sDni, sNombre, sApellidos, sDomicilio, sEmail;
 	protected Date dFechaNacimiento;
 	
@@ -16,56 +16,69 @@ public abstract class Persona {
 		this.setsDni(sDni);
 	}
 
+	@Override
 	public String getsDni() {
 		return sDni;
 	}
 
+	@Override
 	public void setsDni(String sDni) {
 		this.sDni = sDni;
 	}
 
+	@Override
 	public String getsNombre() {
 		return sNombre;
 	}
 
+	@Override
 	public void setsNombre(String sNombre) {
 		this.sNombre = sNombre;
 	}
 
+	@Override
 	public String getsApellidos() {
 		return sApellidos;
 	}
 
+	@Override
 	public void setsApellidos(String sApellidos) {
 		this.sApellidos = sApellidos;
 	}
 
+	@Override
 	public String getsDomicilio() {
 		return sDomicilio;
 	}
 
+	@Override
 	public void setsDomicilio(String sDomicilio) {
 		this.sDomicilio = sDomicilio;
 	}
 
+	@Override
 	public String getsEmail() {
 		return sEmail;
 	}
 
+	@Override
 	public void setsEmail(String sEmail) {
 		this.sEmail = sEmail;
 	}
 
+	@Override
 	public Date getdFechaNacimiento() {
 		return dFechaNacimiento;
 	}
 
+	@Override
 	public void setdFechaNacimiento(Date dFechaNacimiento) {
 		this.dFechaNacimiento = dFechaNacimiento;
 	}
 	
 	public String toString() {
 		String sResultado = "";
+		sResultado += "*************************************************\n";
 		sResultado += "DNI: " + this.sDni + "\n";
 		sResultado += "Nombre: " + this.sNombre + "\n";
 		sResultado += "Apellidos: " + this.sApellidos + "\n";
