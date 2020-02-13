@@ -1,5 +1,8 @@
 package modelo;
 
+/**
+ * La clase Cliente extiende a la clase Persona, por lo que hereda todas las propiedades accesibles
+ */
 public class Cliente extends Persona {
 	private String sTarjetaCredito;
 	
@@ -23,7 +26,8 @@ public class Cliente extends Persona {
 	public String toString() {
 		String sResultado = "";
 		sResultado += super.toString() + "\n";
-		sResultado += "Tarjeta de credito: " + this.sTarjetaCredito + "\n";
+		sResultado += "Tarjeta de credito: " + this.sTarjetaCredito;
+		sResultado += "\n";
 		return sResultado;
 	}
 	
