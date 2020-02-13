@@ -27,7 +27,7 @@ public class Cliente extends Persona {
 		String sResultado = "";
 		sResultado += super.toString() + "\n";
 		sResultado += "Tarjeta de credito: " + this.sTarjetaCredito;
-		sResultado += "\n";
+		sResultado += "********************************************************\n";
 		return sResultado;
 	}
 	

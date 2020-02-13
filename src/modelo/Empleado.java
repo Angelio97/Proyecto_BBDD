@@ -29,6 +29,7 @@ public class Empleado extends Persona {
 		String sResultado = "";
 		sResultado += super.toString() + "\n";
 		sResultado += "Numero de Seguridad social: " + this.sNumSeguridadSocial + "\n";
+		sResultado += "********************************************************\n";
 		return sResultado;
 	}
 

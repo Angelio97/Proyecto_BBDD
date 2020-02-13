@@ -56,10 +56,12 @@ public class Articulo {
 	// 4) toString
 	public String toString() {
 		String sResultado = "";
+		sResultado += "********************************************************\n";
 		sResultado += "ID del Articulo: " + this.shIdentificador + " - ";
 		sResultado += "Nombre: " + this.sNombre + " - ";
-		sResultado += "Precio (Sin IVA): " + this.fPrecio + " euros. - ";
-		sResultado += "Precio (Con IVA): " + this.precioConIva() + " euros.\n";
+		sResultado += "Precio(Sin IVA): " + this.fPrecio + " euros. - ";
+		sResultado += "Precio(Con IVA): " + this.precioConIva() + " euros.\n";
+		sResultado += "********************************************************\n";
 		return sResultado;
 	}
 	
