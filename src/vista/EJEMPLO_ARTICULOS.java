@@ -23,7 +23,7 @@ public class EJEMPLO_ARTICULOS {
 		do {
 			bOpcionMenuPrincipal = menuPrincipal();
 			switch (bOpcionMenuPrincipal) {
-			case 1: // Gestion de articulos
+			case 1: // Gestion de articulo
 				vistaArticulo.subMenuArticulos(t);
 				break;
 			case 2: // Gestion de empleados
