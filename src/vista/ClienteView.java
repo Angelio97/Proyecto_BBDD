@@ -67,7 +67,7 @@ public class ClienteView {
 			System.out.println("Volviendo al menu principal...");
 			break;
 		default:
-			System.out.println("Opcion no valida. Marca una entre 1 y 6");
+			System.out.println("Opcion no valida. Marca una entre 1 y 6.");
 		}
 		return bOperacionExito;
 	}
