@@ -27,7 +27,7 @@ public class ArticuloView {
 	}
 
 	// gestionarOpcionArticulo(byte, Tienda):
-	// Método controlador que en función de la opción que haya introducido el
+	// Método controlador que en funcion de la opción que haya introducido el
 	// usuario en el submenu de articulos realizará una operación u otra.
 	// Input:
 	// - byte bOpcion: Opción introducida por el usuario en el submenú.
