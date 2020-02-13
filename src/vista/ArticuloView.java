@@ -26,7 +26,7 @@ public class ArticuloView {
 		} while (bOpcionSubMenu != 6);
 	}
 
-	// gestionarOpcionArticulo(byte, Tienda):
+	// gestionarOpcionArticulo(byte, Tiend):
 	// Método controlador que en función de la opción que haya introducido el
 	// usuario en el submenu de articulos realizará una operación u otra.
 	// Input:
