@@ -63,7 +63,7 @@ public class EmpleadoView {
 			System.out.println(mostrarEmpleados(t));
 			break;
 		case 6:
-			System.out.println("Volviendo al menu principal...");
+			System.out.println("Volviendo al menu principal... ");
 			break;
 		default:
 			System.out.println("Opcion incorrecta.");

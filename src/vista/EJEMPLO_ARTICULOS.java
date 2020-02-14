@@ -33,7 +33,7 @@ public class EJEMPLO_ARTICULOS {
 				vistaCliente.subMenuClientes(t);
 				break;
 			case 4:
-				System.out.println("Hasta luego, administrador.");
+				System.out.println("Hasta luego, administrador. ");
 				break;
 			default:
 				System.out.println("Opcion incorrecta.");

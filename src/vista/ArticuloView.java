@@ -143,7 +143,7 @@ public class ArticuloView {
 	// - boolean: Devuelve el objeto Articulo que ha sido buscado por el BACKEND.
 	private Articulo buscarArticulo(Tienda t) {
 		String sNombre;
-		sNombre = ValidaLibrary.leer("Introduce un nombre de un articulo que desees buscar: ");
+		sNombre = ValidaLibrary.leer("Introduce un nombre de un articulo que desees buscar : ");
 		return t.searchArticulo(new Articulo(sNombre));
 	}
 

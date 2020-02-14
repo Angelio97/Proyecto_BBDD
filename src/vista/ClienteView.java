@@ -22,7 +22,7 @@ public class ClienteView {
 
 			if (bOpcionSubMenu > 0 && bOpcionSubMenu < 4) {
 				if (bOperacionExito) {
-					System.out.println("Operacion realizada con exito.");
+					System.out.println("Operacion realizada con exito. ");
 				} else {
 					System.out.println("ERROR: No se ha realizado la operacion.");
 				}
