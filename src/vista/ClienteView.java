@@ -9,7 +9,7 @@ import modelo.Cliente;
 
 public class ClienteView {
 	// subMenuClientes(Tienda):
-	// Submenú exclusivo para la gestión de Clientes
+	// Submenu exclusivo para la gestion de Clientes
 	// Input: t (Tienda): Objeto de tipo Tienda.
 	// Output: -
 	public void subMenuClientes(Tienda t) throws ParseException {
@@ -32,18 +32,18 @@ public class ClienteView {
 	}
 
 	// gestionarOpcionCliente(byte, Tienda):
-	// Método controlador que en función de la opción que haya introducido el
-	// usuario en el submenu de cliente realizará una operación u otra.
+	// Metodo controlador que en funcion de la opcion que haya introducido el
+	// usuario en el submenu de cliente realizara una operacion u otra.
 	// Input:
-	// - byte bOpcion: Opción introducida por el usuario en el submenú.
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - byte bOpcion: opcion introducida por el usuario en el Submenu.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean bOperacionExito: Booleano que indica si se ha realizado la
 	// operacion con exito o no.
 	private boolean gestionarOpcionCliente(byte bOpcion, Tienda t) throws ParseException {
 		boolean bOperacionExito = false;
 		switch (bOpcion) {
-		case 1: // Añadir cliente
+		case 1: // Aniadir cliente
 			bOperacionExito = aniadirCliente(t);
 			break;
 		case 2: // Modificar cliente
@@ -79,12 +79,12 @@ public class ClienteView {
 
 	// aniadirCliente(Tienda t):
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND. Pide al usuario que introduzca
-	// los datos de un cliente y llama al BACKEND para poder añadir el cliente al
+	// los datos de un cliente y llama al BACKEND para poder aniadir el cliente al
 	// objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
-	// - boolean: Devuelve un booleano si el BACKEND ha añadido el cliente o no.
+	// - boolean: Devuelve un booleano si el BACKEND ha aniadido el cliente o no.
 	private boolean aniadirCliente(Tienda t) throws ParseException {
 		String sDni, sNombre, sApellidos, sDomicilio, sEmail, sTarjetaCredito, sDateString;
 		Date dFechaNacimiento;
@@ -109,15 +109,15 @@ public class ClienteView {
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND.
 	// 1) Pide al usuario que introduzca el DNI de un cliente que desee
 	// modificar.
-	// 2) Busca en el BACKEND si el cliente está registrado en la tienda.
-	// 3) Si está registrado en la tienda, el FRONTEND pide al usuario que cambie
+	// 2) Busca en el BACKEND si el cliente esta registrado en la tienda.
+	// 3) Si esta registrado en la tienda, el FRONTEND pide al usuario que cambie
 	// los datos del cliente.
 	// 4) Modificamos los datos del objeto.
 	// 5) Le pasamos el objeto cliente modificado al BACKEND.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
-	// - boolean: Devuelve un booleano si el BACKEND ha modificado el artículo o no.
+	// - boolean: Devuelve un booleano si el BACKEND ha modificado el articulo o no.
 	private boolean modificarCliente(Tienda t) throws ParseException {
 		String sDni;	
 		boolean bExito = false;
@@ -141,7 +141,7 @@ public class ClienteView {
 	// Pide al usuario que introduzca el DNI del cliente que desea eliminar y
 	// llama al BACKEND para poder eliminar el cliente del objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve un booleano si el BACKEND ha eliminado el cliente o no.
 	private boolean eliminarCliente(Tienda t) {
@@ -155,7 +155,7 @@ public class ClienteView {
 	// Pide al usuario que introduzca el DNI de un cliente que queremos buscar y
 	// llama al BACKEND para poder buscar el cliente al objeto Tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: Devuelve el objeto CLiente que ha sido buscado por el BACKEND.
 	private Cliente buscarCliente(Tienda t) {
@@ -168,7 +168,7 @@ public class ClienteView {
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND.
 	// Mostrar todos los clientes registrados en la tienda.
 	// Input:
-	// - Tienda t: Objeto tienda de la aplicación.
+	// - Tienda t: Objeto tienda de la aplicacion.
 	// Output:
 	// - boolean: String con todos los clientes.
 	private String mostrarClientes(Tienda t) {

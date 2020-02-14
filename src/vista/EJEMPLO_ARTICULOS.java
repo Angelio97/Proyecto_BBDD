@@ -17,7 +17,7 @@ public class EJEMPLO_ARTICULOS {
 		byte bOpcionMenuPrincipal;
 
 		Tienda t = new Tienda("Tienda DAM", MAXARTICULOS, MAXCLIENTES, MAXEMPLEADOS);
-		System.out.println("Bienvenido al panel de administración");
+		System.out.println("Bienvenido al panel de administracion");
 		System.out.println(t.getsNombre() + " - Tu tienda de confianza");
 
 		do {
@@ -36,7 +36,7 @@ public class EJEMPLO_ARTICULOS {
 				System.out.println("Hasta luego, administrador.");
 				break;
 			default:
-				System.out.println("Opción incorrecta.");
+				System.out.println("Opcion incorrecta.");
 			}
 		} while (bOpcionMenuPrincipal != 4);
 	}
@@ -53,7 +53,7 @@ public class EJEMPLO_ARTICULOS {
 	private static byte menuPrincipal() {
 		Byte bOpcion;
 		System.out.println("###############################################");
-		System.out.println("¿Que deseas gestionar?");
+		System.out.println("�Que deseas gestionar?");
 		System.out.println("1. Gestionar articulos.");
 		System.out.println("2. Gestionar empleados.");
 		System.out.println("3. Gestionar clientes.");
@@ -68,9 +68,9 @@ public class EJEMPLO_ARTICULOS {
 	// Output: Opcion entre 1 y 6.
 	public static byte subMenu(String sClase) {
 		Byte bOpcion;
-		System.out.println("¿Que deseas hacer?");
+		System.out.println("�Que deseas hacer?");
 		System.out.println("---------------------------");
-		System.out.println("1. Añadir " + sClase);
+		System.out.println("1. Aniadir " + sClase);
 		System.out.println("2. Modificar " + sClase);
 		System.out.println("3. Eliminar " + sClase);
 		System.out.println("4. Buscar " + sClase);

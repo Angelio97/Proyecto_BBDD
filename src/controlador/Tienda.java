@@ -20,7 +20,7 @@ public class Tienda {
 		setsNombre(sNombre);
 	}
 
-	// Métodos getters y setters
+	// Metodos getters y setters
 	public String getsNombre() {
 		return sNombre;
 	}

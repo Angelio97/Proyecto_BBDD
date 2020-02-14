@@ -68,7 +68,8 @@ public class ValidaLibrary {
 	}
 
 	/*
-	 * ################################# # VALIDACIÓN DE NUMEROS ENTEROS #
+	 * #################################
+	 * # VALIDACION DE NUMEROS ENTEROS #
 	 * #################################
 	 */
 
@@ -101,7 +102,8 @@ public class ValidaLibrary {
 	}
 
 	/*
-	 * ################################### # VALIDACION DE NUMEROS DECIMALES #
+	 * ################################### 
+	 * # VALIDACION DE NUMEROS DECIMALES #
 	 * ###################################
 	 */
 	public static float validaNumero(String sMensaje, float fMin, float fMax) {
@@ -133,7 +135,8 @@ public class ValidaLibrary {
 	}
 
 	/*
-	 * ############################## # VALIDACION DE NUMEROS BYTE #
+	 * ############################## 
+	 * # VALIDACION DE NUMEROS BYTE #
 	 * ##############################
 	 */
 
@@ -166,7 +169,8 @@ public class ValidaLibrary {
 	}
 
 	/*
-	 * ############################### # VALIDACION DE NUMEROS SHORT #
+	 * ############################### 
+	 * # VALIDACION DE NUMEROS SHORT #
 	 * ##############################
 	 */
 

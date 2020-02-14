@@ -108,8 +108,8 @@ public class EmpleadoView {
 	// Funcion CONTROLADORA ENTRE FRONTEND-BACKEND.
 	// 1) Pide al usuario que introduzca el DNI de un Empleado que desee
 	// modificar.
-	// 2) Busca en el BACKEND si el Empleado esta¡ registrado en la tienda.
-	// 3) Si esta¡ registrado en la tienda, el FRONTEND pide al usuario que cambie
+	// 2) Busca en el BACKEND si el Empleado esta registrado en la tienda.
+	// 3) Si esta registrado en la tienda, el FRONTEND pide al usuario que cambie
 	// los datos del Empleado.
 	// 4) Modificamos los datos del objeto.
 	// 5) Le pasamos el objeto Empleado modificado al BACKEND.

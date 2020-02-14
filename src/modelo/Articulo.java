@@ -18,7 +18,7 @@ public class Articulo {
 		setsNombre(sNombre);
 	}
 	
-	// 3) Métodos getters y setters
+	// 3) Metodos getters y setters
 	public String getsNombre() {
 		return sNombre;
 	}
