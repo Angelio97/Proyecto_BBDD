@@ -32,7 +32,7 @@ public class ArticuloController implements InterfaceController<Articulo> {
 	}
 
 	// #####################
-	// # INTERFACE METHODS #
+	// # INTERFACE METHODS  #
 	// #####################
 	@Override
 	public int searchPosition(Articulo oObjeto) {

@@ -73,7 +73,7 @@ public class EmpleadoView {
 
 	// ###############################
 	// # CONTROLLER FRONTEND-BACKEND #
-	// # Empleado METHODS #
+	// # Empleado METHODS  #
 	// ###############################
 
 	// aniadirEmpleado(Tienda t):
